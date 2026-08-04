@@ -1,1 +1,152 @@
+/* ============================================================
+   Gradient — Alignment Layer Theme
+   Canonical TriadicFrameworks Edition
+   ============================================================ */
+
+:root {
+  /* Core Palette */
+  --bg: #000000;
+  --bg-alt: #0a0a0a;
+  --text: #ffffff;
+  --text-dim: #cccccc;
+
+  /* Triadic S / R / E Modes */
+  --S: #00e5ff;   /* Structure */
+  --R: #ff00e5;   /* Resonance */
+  --E: #ffe500;   /* Energy */
+
+  /* RTT lineage accents */
+  --rtt1: #7fb3ff;
+  --rtt2: #c792ea;
+  --rtt3: #f6c177;
+  --rtt12: #ffffff;
+
+  /* Layout */
+  --radius: 10px;
+  --shadow: 0 0 40px rgba(0,0,0,0.8);
+  --font: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+/* Base */
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top, #111111, #000000);
+  color: var(--text);
+  font-family: var(--font);
+  min-height: 100vh;
+}
+
+/* Shell */
+.shell {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+  border: 1px solid #222222;
+  box-shadow: var(--shadow);
+}
+
+/* Headings */
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+/* Subtitle */
+.subtitle {
+  margin-bottom: 1.5rem;
+  color: var(--text-dim);
+  font-size: 1rem;
+}
+
+/* Triadic Bars */
+.bars {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1.75rem;
+}
+
+.bar {
+  flex: 1;
+  height: 6px;
+  border-radius: 999px;
+}
+
+.bar.S { background: var(--S); }
+.bar.R { background: var(--R); }
+.bar.E { background: var(--E); }
+
+/* Parameter Blocks */
+.params {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.param {
+  background: #111111;
+  border-radius: var(--radius);
+  padding: 0.9rem 1rem;
+  border-left: 4px solid var(--S);
+}
+
+.param-label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-dim);
+}
+
+.param-value {
+  margin-top: 0.35rem;
+  font-size: 1.05rem;
+}
+
+/* RTT Route Buttons */
+.routes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.route {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  background: #111111;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  text-decoration: none;
+  border: 1px solid #222222;
+}
+
+.route span.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.route.rtt1 span.dot { background: var(--rtt1); }
+.route.rtt2 span.dot { background: var(--rtt2); }
+.route.rtt3 span.dot { background: var(--rtt3); }
+.route.rtt12 span.dot { background: var(--rtt12); }
+
+/* Logo */
+.logo {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+}
+
+/* Favicon hint (for future use) */
+.favicon {
+  display: none;
+}
 
