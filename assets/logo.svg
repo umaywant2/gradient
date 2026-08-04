@@ -1,1 +1,26 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <circle cx="120" cy="120" r="120" fill="#000000"/>
+
+  <!-- Triadic S / R / E arcs -->
+  <path d="M120 20 A100 100 0 0 1 220 120" stroke="#00e5ff" stroke-width="14" fill="none" />
+  <path d="M220 120 A100 100 0 0 1 120 220" stroke="#ff00e5" stroke-width="14" fill="none" />
+  <path d="M120 220 A100 100 0 0 1 20 120" stroke="#ffe500" stroke-width="14" fill="none" />
+  <path d="M20 120 A100 100 0 0 1 120 20" stroke="#00e5ff" stroke-width="14" fill="none" />
+
+  <!-- Inner alignment ring -->
+  <circle cx="120" cy="120" r="60" stroke="#ffffff" stroke-width="4" fill="none" opacity="0.85"/>
+
+  <!-- Gradient core glyph -->
+  <circle cx="120" cy="120" r="12" fill="#ffffff"/>
+
+  <!-- Text label -->
+  <text x="120" y="205" font-family="Inter, Segoe UI, sans-serif"
+        font-size="22" fill="#ffffff" text-anchor="middle"
+        letter-spacing="0.08em">
+    GRADIENT
+  </text>
+
+</svg>
 
