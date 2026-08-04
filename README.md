@@ -1,4 +1,8 @@
+<img width="256" height="256" alt="gradient_icon" src="https://github.com/user-attachments/assets/0ca084c3-4dbe-4f62-8eef-7de9f28ab0d3" />
+
 # **gradient — Bring your idea into alignment**
+
+- [`module.json`](https://raw.githubusercontent.com/umaywant2/gradient/refs/heads/main/module.json) — Agentic module schema role assignments
 
 Gradient is the **alignment surface** for ideas entering the RTT lineage.
 
