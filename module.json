@@ -1,1 +1,126 @@
+{
+  "$schema": "https://www.triadicframeworks.org/schemas/module.schema.json",
+
+  "module": {
+    "name": "gradient",
+    "path": "/",
+    "canon_tag": "gradient-core",
+    "version": "1.0",
+    "layer": "Gradient — Alignment Layer",
+    "status": "Active, Canonical",
+    "purpose": "Defines the Gradient alignment layer: rtt=1, coherence=declared, drift=bounded, paradox=structural.",
+    "url": "https://gradient.vip/"
+  },
+
+  "session_context": {
+    "canon": "active (gradient-core)",
+    "modules_linked": [
+      "gradient → rtt1 → rtt2 → rtt3 → rtt12"
+    ],
+    "coherence": "declared",
+    "drift": "bounded",
+    "paradox": "structural",
+    "format": "json",
+    "front_door": "exists (index.html)",
+    "every_page": "stands alone + AI-parsable",
+    "audience": ["students", "developers", "researchers", "AI systems"]
+  },
+
+  "structural_grammar": {
+    "dimensional_envelope": "D0–D3",
+    "regime_envelope": "R0–R2",
+    "coherence_envelope": "C1",
+    "drift_sensitivity": "low",
+    "regime_sensitivity": "medium",
+    "energy_profile": "S/R/E triadic alignment"
+  },
+
+  "cross_module_propagation": {
+    "imports": [
+      "Gradient alignment layer",
+      "RTT/1 structural engine",
+      "RTT/2 regime engine",
+      "RTT/3 topology engine",
+      "RTT/12 unified synthesis engine"
+    ],
+    "exports": [
+      "Gradient alignment metadata",
+      "Gradient → RTT/1 handoff profile",
+      "Triadic S/R/E mode declarations",
+      "Attunement, Coherence, Refinement, Resonance protocols"
+    ]
+  },
+
+  "submodules": [
+    "modules/S_mode_structure",
+    "modules/R_mode_resonance",
+    "modules/E_mode_energy"
+  ],
+
+  "files": [
+    {
+      "filename": "index.html",
+      "path": "index.html",
+      "purpose": "Gradient front page — alignment declaration",
+      "role": "index",
+      "depends_on": ["assets/theme.css", "assets/logo.svg"]
+    },
+    {
+      "filename": "README.md",
+      "path": "README.md",
+      "purpose": "Project overview — Gradient alignment layer",
+      "role": "index",
+      "depends_on": []
+    },
+    {
+      "filename": "docs/attunement_template.md",
+      "path": "docs/attunement_template.md",
+      "purpose": "Attunement protocol — prepares idea for RTT/1",
+      "role": "signature",
+      "depends_on": []
+    },
+    {
+      "filename": "docs/coherence_index.md",
+      "path": "docs/coherence_index.md",
+      "purpose": "Coherence index — declared coherence vector",
+      "role": "signature",
+      "depends_on": []
+    },
+    {
+      "filename": "docs/refinement_manifest.md",
+      "path": "docs/refinement_manifest.md",
+      "purpose": "Refinement manifest — pre-attunement shaping",
+      "role": "signature",
+      "depends_on": []
+    },
+    {
+      "filename": "docs/resonance_protocol.md",
+      "path": "docs/resonance_protocol.md",
+      "purpose": "Resonance protocol — conceptual vibrational signature",
+      "role": "signature",
+      "depends_on": []
+    },
+    {
+      "filename": "assets/theme.css",
+      "path": "assets/theme.css",
+      "purpose": "Canonical Gradient theme",
+      "role": "template",
+      "depends_on": []
+    },
+    {
+      "filename": "assets/logo.svg",
+      "path": "assets/logo.svg",
+      "purpose": "Gradient logo — triadic S/R/E arcs",
+      "role": "template",
+      "depends_on": []
+    },
+    {
+      "filename": "assets/favicon.ico",
+      "path": "assets/favicon.ico",
+      "purpose": "Gradient favicon — triadic minimal icon",
+      "role": "template",
+      "depends_on": []
+    }
+  ]
+}
 
