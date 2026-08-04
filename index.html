@@ -1,1 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gradient — Structural Coherence</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- RTT/12 OG hint -->
+  <meta property="og:title" content="Gradient — Structural Coherence" />
+  <meta property="og:description"
+        content="rtt=1 | coherence=declared | drift=bounded | paradox=structural" />
+
+  <style>
+    :root {
+      --bg: #000000;
+      --bg-alt: #0a0a0a;
+      --text: #ffffff;
+      --text-dim: #cccccc;
+
+      --S: #00e5ff;
+      --E: #ff00e5;
+      --R: #ffe500;
+
+      --radius: 10px;
+      --font: "Inter", "Segoe UI", system-ui, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at top, #111111, #000000);
+      color: var(--text);
+      font-family: var(--font);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .shell {
+      max-width: 960px;
+      width: 100%;
+      padding: 2.5rem 2rem;
+      background: var(--bg-alt);
+      border-radius: var(--radius);
+      border: 1px solid #222222;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    }
+
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: 2.4rem;
+      letter-spacing: 0.04em;
+    }
+
+    .subtitle {
+      margin-bottom: 1.5rem;
+      color: var(--text-dim);
+      font-size: 1rem;
+    }
+
+    .bars {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 1.75rem;
+    }
+
+    .bar {
+      flex: 1;
+      height: 6px;
+      border-radius: 999px;
+    }
+
+    .bar.S { background: var(--S); }
+    .bar.E { background: var(--E); }
+    .bar.R { background: var(--R); }
+
+    .params {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .param {
+      background: #111111;
+      border-radius: var(--radius);
+      padding: 0.9rem 1rem;
+      border-left: 4px solid var(--S);
+    }
+
+    .param-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-dim);
+    }
+
+    .param-value {
+      margin-top: 0.35rem;
+      font-size: 1.05rem;
+    }
+
+    .routes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .route {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.55rem 0.9rem;
+      border-radius: 999px;
+      background: #111111;
+      color: var(--text-dim);
+      font-size: 0.85rem;
+      text-decoration: none;
+      border: 1px solid #222222;
+    }
+
+    .route span.dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    .route.rtt1 span.dot { background: var(--S); }
+    .route.rtt2 span.dot { background: var(--E); }
+    .route.rtt3 span.dot { background: var(--R); }
+    .route.rtt12 span.dot { background: #ffffff; }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <h1>Gradient</h1>
+    <div class="subtitle">
+      rtt=1 · coherence=declared · drift=bounded · paradox=structural
+    </div>
+
+    <div class="bars">
+      <div class="bar S"></div>
+      <div class="bar E"></div>
+      <div class="bar R"></div>
+    </div>
+
+    <section class="params">
+      <div class="param">
+        <div class="param-label">RTT Engine</div>
+        <div class="param-value">RTT/1 — Structural</div>
+      </div>
+      <div class="param">
+        <div class="param-label">Coherence</div>
+        <div class="param-value">Declared</div>
+      </div>
+      <div class="param">
+        <div class="param-label">Drift</div>
+        <div class="param-value">Bounded</div>
+      </div>
+      <div class="param">
+        <div class="param-label">Paradox</div>
+        <div class="param-value">Structural</div>
+      </div>
+    </section>
+
+    <section class="routes">
+      <a class="route rtt1" href="https://lumen.rtt1.online" target="_blank">
+        <span class="dot"></span>
+        RTT/1 — Lumen
+      </a>
+      <a class="route rtt2" href="https://hephaestus.rtt2.online" target="_blank">
+        <span class="dot"></span>
+        RTT/2 — Hephaestus
+      </a>
+      <a class="route rtt3" href="https://aurion.rtt3.online" target="_blank">
+        <span class="dot"></span>
+        RTT/3 — Aurion
+      </a>
+      <a class="route rtt12" href="https://harmonia.rtt12.online" target="_blank">
+        <span class="dot"></span>
+        RTT/12 — Harmonia
+      </a>
+    </section>
+  </main>
+</body>
+</html>
 
