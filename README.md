@@ -1,25 +1,3 @@
-# gradient
-gradient.vip - Bring your idea into alignment.
-```
-
-So let’s give you a **proper, canon‑aligned README** that matches:
-
-- the RTT lineage you’ve established  
-- the Gradient front‑page direction  
-- the structural declaration you wrote earlier:  
-  **rtt=1 | coherence=declared | drift=bounded | paradox=structural**
-
-And it will stay fully compatible with the engines you have open in other tabs:
-
-- Lumen (RTT/1)  
-- Hephaestus (RTT/2)  
-- Aurion (RTT/3)  
-- Harmonia (RTT/12)
-
-Below is a clean, production‑ready README you can paste directly into the GitHub editor you’re currently viewing.
-
----
-
 # **gradient — Bring your idea into alignment**
 
 Gradient is the **alignment surface** for ideas entering the RTT lineage.
